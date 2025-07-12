@@ -39,13 +39,3 @@ This project focuses on performing **data exploration, cleaning, and analysis** 
 - 📦 Categorization of products by weight: Low, Medium, Bulk
 - ⚖️ Total inventory weight per category
 
-## 📈 Sample Query Example
-
-```sql
--- Top 5 categories offering the highest average discount percentage
-SELECT category, 
-ROUND(AVG(discountPercent),2) AS avg_discount
-FROM zepto
-GROUP BY category
-ORDER BY avg_discount DESC
-LIMIT 5;
